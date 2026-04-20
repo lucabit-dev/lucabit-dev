@@ -1,9 +1,5 @@
 <div align="center">
 
-```
-~/lucabit-dev $
-```
-
 # Luca Longoni
 
 **Full-Stack Engineer · Buenos Aires, Argentina**
