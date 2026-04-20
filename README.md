@@ -2,7 +2,7 @@
 
 # Luca Longoni
 
-**Founding Engineer · Full-Stack · Buenos Aires, Argentina**
+**Full-Stack Engineer · Buenos Aires, Argentina**
 
 *I care about the structure underneath, but also about the feeling it leaves behind.*
 
