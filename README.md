@@ -1,5 +1,9 @@
 <div align="center">
 
+```
+~/lucabit-dev $
+```
+
 # Luca Longoni
 
 **Full-Stack Engineer · Buenos Aires, Argentina**
@@ -69,10 +73,4 @@ Turns a user's problem, prompt, and evidence into a structured action plan. LLM 
 
 ---
 
-<div align="center">
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=lucabit-dev&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=9ca762&icon_color=9ca762&text_color=e6edf3&hide=stars&count_private=true)](https://github.com/lucabit-dev)
-&nbsp;&nbsp;
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=lucabit-dev&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=9ca762&text_color=e6edf3&langs_count=6)](https://github.com/lucabit-dev)
-
-</div>
+📍 Buenos Aires &nbsp;·&nbsp; 🌐 [lucalongoni.site](https://lucalongoni.site) &nbsp;·&nbsp; 💼 [linkedin](https://linkedin.com/in/luca-longoni) &nbsp;·&nbsp; 📬 lucalong54@gmail.com
