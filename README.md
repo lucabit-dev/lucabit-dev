@@ -23,8 +23,36 @@ I own things end-to-end: architecture, infrastructure, frontend, deployment.
 
 ### What I'm building
 
+**[Prize — SaaS / Competitive Pricing Intelligence]**
+• Co-founded Prize, a competitive-pricing intelligence platform for Argentine retailers. Built the full stack from scratch: Next.js 15
++ React 19 frontend (Vercel) and NestJS 10 + Prisma 6 + PostgreSQL backend (Railway), connected via a Next.js rewrite proxy.
+• Designed and shipped a custom JWT auth system (HS256, httpOnly cookies with Bearer fallback) including bcrypt hashing,
+account lockout, email verification, password reset, two-step email change, and FOUNDER-issued 15-minute impersonation
+tokens for support.
+• Built a multi-tenant company model with row-level isolation across 15 Prisma models, three roles (OWNER, EXECUTIVE,
+ANALYST) enforced server-side via NestJS guards, and a token-based invite flow with 7-day expiry.
+• Implemented an async email pipeline on pg-boss (PostgreSQL queues) with exponential-backoff retries, dead-letter table, and
+a privacy trade-off storing sha256-truncated recipient hashes. 7 React Email templates delivered via Resend.
+• Built a SaaS pricing engine modeling 10 Argentine competitor sources with tiered catalog pricing, annual discounts, and promo
+codes. Config stored as a versioned JSON singleton, validated on every write.
+• Shipped a 1900-line interactive price matrix UI (band states, configurable thresholds, URL-driven filters, shift+click range
+selection, SVG price-history charts) and a 1500-line matching review queue with keyboard shortcuts. Instrumented Sentry on
+both services with CI source-map upload, structured pino/JSON logging, and GitHub Actions CI on each repo.
+
+---
+
 **[TAPP-V2 — Trading Analytics Platform](https://github.com/lucabit-dev/TAPP-V2)**
-Real broker integrations (Polygon.io, ChartsWatcher, P&L proxy WebSocket). Custom indicator engine: EMA 12/20/26/200 on 1-min & 5-min, MACD, VWAP, LOD/HOD — 99%+ TradingView accuracy. 266 commits. Deployed on AWS EC2 + Railway + Vercel with PM2, nginx, GitHub Actions CI/CD.
+• Built and led TAPP-V2, a production trading analytics platform in Node.js, TypeScript and React 19, used by traders for real
+decisions on live markets.
+• Designed a custom technical indicator engine (EMA, MACD, VWAP, LOD/HOD) matching TradingView at 99%+ accuracy,
+processing 3,000+ candles per calculation across multiple timeframes.
+• Integrated real broker APIs over WebSocket: Polygon.io for market data, ChartsWatcher for alert streams, and a P&L proxy for
+live position tracking. Sustained sub-200ms latency on 500+ concurrent feeds and 10K+ events/day.
+• Designed alert evaluation and asset ranking algorithms surfacing opportunities by momentum, improving signal detection
+speed ~40%.
+• Owned full deployment pipeline: AWS EC2 + Railway + Vercel, nginx reverse proxy, PM2 process management, GitHub
+Actions CI/CD for zero-downtime pushes. 266 commits, all production.
+• Built most of the codeb
 
 `Node.js` `React 19` `TypeScript` `WebSockets` `MongoDB` `AWS` `PM2` `nginx`
 
@@ -38,7 +66,13 @@ pnpm monorepo with `@syncboard/shared` — typed Socket.IO payloads & API DTOs e
 ---
 
 **[Bunzi — Multi-Tenant SaaS Workspace & CRM](https://github.com/lucabit-dev/bunzi)**
-Founded & built solo. Adaptive workspace for modern teams — CRM, projects, tasks, docs. Next.js App Router, PostgreSQL + Prisma, Clerk auth, up to 3 isolated workspaces per user. GitHub Actions CI/CD, Vercel.
+• Founded and shipped Bunzi, a multi-tenant SaaS workspace and CRM platform, solo from architecture to production across
+two complete rebuilds.
+• Final version built on Next.js App Router, TypeScript, PostgreSQL with Prisma, Clerk auth (with graceful degradation), pnpm
+and Vercel. Supported up to 3 isolated workspaces per user with full tenant isolation.
+• Earlier version shipped on Node.js, React, MongoDB and Railway, demonstrating end-to-end ownership across two complete
+codebases.
+• Owned the full product lifecycle: system design, UX flows, onboarding, CI/CD via GitHub Actions, and iterative feedback cycles.
 
 `Next.js` `TypeScript` `PostgreSQL` `Prisma` `Clerk` `pnpm` `Vercel` `GitHub Actions`
 
