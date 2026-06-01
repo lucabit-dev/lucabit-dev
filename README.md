@@ -4,12 +4,7 @@
 
 **Full-Stack Engineer · Buenos Aires, Argentina**
 
-*I care about the structure underneath, but also about the feeling it leaves behind.*
-
-[![Portfolio](https://img.shields.io/badge/lucalongoni.site-9ca762?style=flat-square&logo=safari&logoColor=white)](https://lucalongoni.site)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a66c2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/luca-longoni)
-[![Email](https://img.shields.io/badge/lucalong54@gmail.com-ea4335?style=flat-square&logo=gmail&logoColor=white)](mailto:lucalong54@gmail.com)
-[![Available](https://img.shields.io/badge/available%20for%20work-9ca762?style=flat-square&logoColor=white)](https://lucalongoni.site)
+*Developing more than just needs.*
 
 </div>
 
